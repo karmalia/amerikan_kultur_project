@@ -3,7 +3,7 @@ import React from "react";
 type Props = {};
 
 function DashboardPage({}: Props) {
-  return <div>DashboardPage</div>;
+  return <div>work in progess</div>;
 }
 
 export default DashboardPage;

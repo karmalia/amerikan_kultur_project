@@ -2,13 +2,13 @@
   "navbarItems": [
     {
       "id": "home-1",
-      "name": "ÖZET",
+      "name": "ANA SAYFA",
       "link": "/dashboard"
     },
     {
       "id": "home-2",
-      "name": "RAPORLAR",
-      "link": "/raporlar"
+      "name": "SINIFLAR",
+      "link": "/siniflar"
     },
     {
       "id": "home-3",

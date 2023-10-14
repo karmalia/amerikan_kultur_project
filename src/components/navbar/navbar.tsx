@@ -26,8 +26,8 @@ function Navbar() {
   }, [all.resolvedTheme]);
 
   return (
-    <div className='h-30 border-2    mb-2  '>
-      <div className='py-2 border-b-2 border-gray-200'>
+    <div className='h-30     mb-2  border-b border-white shadow-lg'>
+      <div className='py-2 dark:border-b  border-gray-200'>
         <div className='md:container flex-wrap  flex justify-between items-center h-full'>
           <div className='h-[55px] md:h-[110px] w-[200px] md:w-[400px] bg-gradient-to-br from-green-300 via-blue-500 to-purple-600'>
             {/* <Image
@@ -50,15 +50,15 @@ function Navbar() {
         </div>
       </div>
       <div>
-        <div className='sm:flex justify-between py-2 md:container mx-auto'>
-          <ul className='flex border-2 gap-2 flex-wrap  bg-white dark:bg-zinc-950 text-black dark:text-white'>
+        <div className='sm:flex justify-between py-2 md:container mx-auto '>
+          <ul className='flex  gap-2 flex-wrap  bg-white dark:bg-zinc-950 text-black dark:text-white'>
             {navbarItems.map((item) => (
               <li key={item.id}>
                 <Button onClick={() => push(item.link)}>{item.name}</Button>
               </li>
             ))}
           </ul>
-          <div className='border-2'>
+          <div className=''>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant='outline' size='icon'>
