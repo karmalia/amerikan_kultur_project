@@ -1,0 +1,19 @@
+{
+  "navbarItems": [
+    {
+      "id": "home-1",
+      "name": "ÖZET",
+      "link": "/dashboard"
+    },
+    {
+      "id": "home-2",
+      "name": "RAPORLAR",
+      "link": "/raporlar"
+    },
+    {
+      "id": "home-3",
+      "name": "SINAVLAR",
+      "link": "/sinavlar"
+    }
+  ]
+}
