@@ -1,4 +1,5 @@
 "use client";
+import ContentWrapper from "@/components/core/layout-components/content-wrapper/ContentWrapper";
 import { Button } from "@/components/ui/button";
 import { ELanguages, TClass } from "@/schemas/types/class.type";
 import React, { useEffect, useState } from "react";
@@ -210,7 +211,7 @@ function SiniflarPage({}: Props) {
   console.log("currentClass", currentClass);
 
   return (
-    <div className='h-12 md:container'>
+    <ContentWrapper>
       <h1 className='p-2 text-3xl text-primary font-bold'>Sınıf Listem</h1>
       <div className='flex gap-2 my-2 overflow-auto'>
         {siniflar.map((sinif, index) => (
@@ -243,9 +244,9 @@ function SiniflarPage({}: Props) {
           return (
             <div
               key={index}
-              className='h-12 grid grid-cols-4 bg-gray-200 shadow-md hover:bg-gray-400 pl-2 font-bold rounded-md flex items-center'
+              className='h-12 grid grid-cols-4 bg-gray-200 shadow-md hover:bg-gray-400 pl-2 font-bold rounded-md items-center'
             >
-              <span>{student.name + student.surname}</span>
+              <span>{student.name + " " + student.surname}</span>
               <span>{student.parentsPhone}</span>
               <span>{student.parentsName}</span>
               <span>{student.parentsPhone}</span>
@@ -253,7 +254,7 @@ function SiniflarPage({}: Props) {
           );
         })}
       </div>
-    </div>
+    </ContentWrapper>
   );
 }
 

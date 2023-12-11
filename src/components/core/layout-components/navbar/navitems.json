@@ -2,18 +2,18 @@
   "navbarItems": [
     {
       "id": "home-1",
-      "name": "ANA SAYFA",
+      "name": "Ana Sayfa",
       "link": "/dashboard"
     },
     {
       "id": "home-2",
-      "name": "SINIFLAR",
+      "name": "Sınıflar",
       "link": "/siniflar"
     },
     {
       "id": "home-3",
-      "name": "SINAVLAR",
-      "link": "/sinavlar"
+      "name": "Belgeler",
+      "link": "/belgeler"
     }
   ]
 }

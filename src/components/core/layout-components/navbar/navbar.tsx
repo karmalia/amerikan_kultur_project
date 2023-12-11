@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import { navbarItems } from "./navitems.json";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function Navbar() {
   const all = useTheme();
@@ -49,12 +50,18 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div>
-        <div className='sm:flex justify-between py-2 md:container mx-auto '>
-          <ul className='flex  gap-2 flex-wrap  bg-white dark:bg-zinc-950 text-black dark:text-white'>
+      {/* Old Navbar */}
+      {/* <div className=''>
+        <div className='sm:flex justify-between py-2 md:container mx-auto items-center '>
+          <ul className='flex  gap-2 flex-wrap  dark:bg-zinc-950 text-black dark:text-white'>
             {navbarItems.map((item) => (
-              <li key={item.id}>
-                <Button onClick={() => push(item.link)}>{item.name}</Button>
+              <li
+                key={item.id}
+                className='text-md  text-primary font-bold tracking-wider'
+              >
+                <Link href={item.link} onClick={() => push(item.link)}>
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -81,7 +88,7 @@ function Navbar() {
             </DropdownMenu>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
